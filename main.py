@@ -1,1 +1,12 @@
-print("hello g!")
+name: Build and Deploy NodeJS App on AWS
+on:
+  push:
+    branches:
+    - main
+  
+jobs:
+  Build-App:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4  
